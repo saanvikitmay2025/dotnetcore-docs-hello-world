@@ -1,12 +1,142 @@
 ﻿@page
 @model IndexModel
 @{    
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Azure Cloud Solutions";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Hello World from .NET 8</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <hr />
-    <div>Host operating system: @Model.OSVersion</div>
+    <h1 class="display-4 text-primary mb-4">
+        <i class="fas fa-cloud"></i> Welcome to Microsoft Azure Cloud
+    </h1>
+    <p class="lead">Empowering businesses with intelligent cloud solutions and cutting-edge technology</p>
+    
+    <hr class="my-5" />
+    
+    <div class="row mt-4">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-info">
+                        <i class="fas fa-server"></i> Compute Services
+                    </h5>
+                    <p class="card-text">Scale your applications with Virtual Machines, App Services, and Azure Functions for serverless computing.</p>
+                    <a href="https://azure.microsoft.com/services/virtual-machines/" class="btn btn-outline-info">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-success">
+                        <i class="fas fa-database"></i> Storage Solutions
+                    </h5>
+                    <p class="card-text">Secure, scalable storage with Azure Blob Storage, SQL Database, and Cosmos DB for global distribution.</p>
+                    <a href="https://azure.microsoft.com/services/storage/" class="btn btn-outline-success">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">
+                        <i class="fas fa-brain"></i> AI & Machine Learning
+                    </h5>
+                    <p class="card-text">Build intelligent applications with Azure AI, Cognitive Services, and Machine Learning capabilities.</p>
+                    <a href="https://azure.microsoft.com/services/machine-learning/" class="btn btn-outline-warning">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+            <div class="card border-primary">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="fas fa-shield-alt"></i> Security & Compliance</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success"></i> Azure Active Directory</li>
+                        <li><i class="fas fa-check text-success"></i> Key Vault for secrets management</li>
+                        <li><i class="fas fa-check text-success"></i> Advanced Threat Protection</li>
+                        <li><i class="fas fa-check text-success"></i> Compliance certifications (SOC, ISO, GDPR)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+            <div class="card border-info">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0"><i class="fas fa-network-wired"></i> Hybrid & Multi-Cloud</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success"></i> Azure Arc for hybrid management</li>
+                        <li><i class="fas fa-check text-success"></i> ExpressRoute for private connectivity</li>
+                        <li><i class="fas fa-check text-success"></i> Azure Stack for on-premises</li>
+                        <li><i class="fas fa-check text-success"></i> Multi-cloud strategies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="alert alert-light mt-4" role="alert">
+        <h5 class="alert-heading"><i class="fas fa-info-circle"></i> System Information</h5>
+        <p class="mb-1"><strong>Application:</strong> ASP.NET Core 8 on Azure</p>
+        <p class="mb-1"><strong>Host OS:</strong> @Model.OSVersion</p>
+        <p class="mb-0"><strong>Cloud Region:</strong> Optimized for global availability</p>
+    </div>
+    
+    <div class="mt-5">
+        <h3 class="text-secondary">Why Choose Azure?</h3>
+        <div class="row mt-3">
+            <div class="col-md-3 text-center">
+                <i class="fas fa-globe fa-3x text-primary mb-2"></i>
+                <h6>Global Reach</h6>
+                <small>60+ regions worldwide</small>
+            </div>
+            <div class="col-md-3 text-center">
+                <i class="fas fa-dollar-sign fa-3x text-success mb-2"></i>
+                <h6>Cost Effective</h6>
+                <small>Pay only for what you use</small>
+            </div>
+            <div class="col-md-3 text-center">
+                <i class="fas fa-lock fa-3x text-warning mb-2"></i>
+                <h6>Enterprise Security</h6>
+                <small>Built-in security controls</small>
+            </div>
+            <div class="col-md-3 text-center">
+                <i class="fas fa-rocket fa-3x text-info mb-2"></i>
+                <h6>Innovation Ready</h6>
+                <small>Latest technologies & services</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mt-5">
+        <a href="https://azure.microsoft.com/free/" class="btn btn-primary btn-lg me-3">
+            <i class="fas fa-cloud-download-alt"></i> Start Free Trial
+        </a>
+        <a href="https://docs.microsoft.com/azure/" class="btn btn-outline-primary btn-lg">
+            <i class="fas fa-book"></i> Documentation
+        </a>
+    </div>
 </div>
+
+<style>
+    .card {
+        transition: transform 0.2s;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .fas {
+        margin-right: 8px;
+    }
+</style>
